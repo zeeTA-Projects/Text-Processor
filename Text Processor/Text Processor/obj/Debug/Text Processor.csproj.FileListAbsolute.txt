@@ -1,0 +1,10 @@
+F:\xamp\XAMP\htdocs\Text-Processor\Text Processor\Text Processor\bin\Debug\Text Processor.exe.config
+F:\xamp\XAMP\htdocs\Text-Processor\Text Processor\Text Processor\bin\Debug\Text Processor.exe
+F:\xamp\XAMP\htdocs\Text-Processor\Text Processor\Text Processor\bin\Debug\Text Processor.pdb
+F:\xamp\XAMP\htdocs\Text-Processor\Text Processor\Text Processor\obj\Debug\Text Processor.csprojAssemblyReference.cache
+F:\xamp\XAMP\htdocs\Text-Processor\Text Processor\Text Processor\obj\Debug\Text_Processor.Form1.resources
+F:\xamp\XAMP\htdocs\Text-Processor\Text Processor\Text Processor\obj\Debug\Text_Processor.Properties.Resources.resources
+F:\xamp\XAMP\htdocs\Text-Processor\Text Processor\Text Processor\obj\Debug\Text Processor.csproj.GenerateResource.cache
+F:\xamp\XAMP\htdocs\Text-Processor\Text Processor\Text Processor\obj\Debug\Text Processor.csproj.CoreCompileInputs.cache
+F:\xamp\XAMP\htdocs\Text-Processor\Text Processor\Text Processor\obj\Debug\Text Processor.exe
+F:\xamp\XAMP\htdocs\Text-Processor\Text Processor\Text Processor\obj\Debug\Text Processor.pdb
