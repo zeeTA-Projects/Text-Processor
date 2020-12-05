@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Read_Data_btn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.ReplaceFilter_BTN = new System.Windows.Forms.Button();
             this.FindFilter_BTN = new System.Windows.Forms.Button();
@@ -44,8 +45,20 @@
             this.Bold_BTN = new System.Windows.Forms.Button();
             this.ComponentTexting_Box = new System.Windows.Forms.RichTextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.Read_Data_btn = new System.Windows.Forms.Button();
+            this.pnlGeneralOptions = new System.Windows.Forms.Panel();
+            this.pnlSearchPanel = new System.Windows.Forms.Panel();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pnlFindPanel = new System.Windows.Forms.Panel();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.pnlSearchPanel.SuspendLayout();
+            this.pnlFindPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -68,6 +81,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(903, 99);
             this.panel1.TabIndex = 0;
+            // 
+            // Read_Data_btn
+            // 
+            this.Read_Data_btn.Location = new System.Drawing.Point(632, 16);
+            this.Read_Data_btn.Name = "Read_Data_btn";
+            this.Read_Data_btn.Size = new System.Drawing.Size(120, 23);
+            this.Read_Data_btn.TabIndex = 13;
+            this.Read_Data_btn.Text = "Read Data";
+            this.Read_Data_btn.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -235,35 +257,141 @@
             // 
             // ComponentTexting_Box
             // 
-            this.ComponentTexting_Box.Location = new System.Drawing.Point(25, 136);
+            this.ComponentTexting_Box.Location = new System.Drawing.Point(260, 133);
             this.ComponentTexting_Box.Name = "ComponentTexting_Box";
-            this.ComponentTexting_Box.Size = new System.Drawing.Size(627, 289);
+            this.ComponentTexting_Box.Size = new System.Drawing.Size(306, 289);
             this.ComponentTexting_Box.TabIndex = 1;
             this.ComponentTexting_Box.Text = "";
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(670, 136);
+            this.listBox1.Location = new System.Drawing.Point(12, 133);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(242, 290);
             this.listBox1.TabIndex = 2;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // Read_Data_btn
+            // pnlGeneralOptions
             // 
-            this.Read_Data_btn.Location = new System.Drawing.Point(632, 16);
-            this.Read_Data_btn.Name = "Read_Data_btn";
-            this.Read_Data_btn.Size = new System.Drawing.Size(120, 23);
-            this.Read_Data_btn.TabIndex = 13;
-            this.Read_Data_btn.Text = "Read Data";
-            this.Read_Data_btn.UseVisualStyleBackColor = true;
+            this.pnlGeneralOptions.Location = new System.Drawing.Point(572, 134);
+            this.pnlGeneralOptions.Name = "pnlGeneralOptions";
+            this.pnlGeneralOptions.Size = new System.Drawing.Size(351, 290);
+            this.pnlGeneralOptions.TabIndex = 3;
+            this.pnlGeneralOptions.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGeneralOptions_Paint);
+            // 
+            // pnlSearchPanel
+            // 
+            this.pnlSearchPanel.BackColor = System.Drawing.Color.BurlyWood;
+            this.pnlSearchPanel.Controls.Add(this.radioButton2);
+            this.pnlSearchPanel.Controls.Add(this.radioButton1);
+            this.pnlSearchPanel.Controls.Add(this.button2);
+            this.pnlSearchPanel.Controls.Add(this.button1);
+            this.pnlSearchPanel.Location = new System.Drawing.Point(965, 12);
+            this.pnlSearchPanel.Name = "pnlSearchPanel";
+            this.pnlSearchPanel.Size = new System.Drawing.Size(306, 263);
+            this.pnlSearchPanel.TabIndex = 0;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(144, 44);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(85, 17);
+            this.radioButton2.TabIndex = 3;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(21, 44);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.TabIndex = 2;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(31, 94);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(144, 94);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // pnlFindPanel
+            // 
+            this.pnlFindPanel.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pnlFindPanel.Controls.Add(this.radioButton3);
+            this.pnlFindPanel.Controls.Add(this.radioButton4);
+            this.pnlFindPanel.Controls.Add(this.button3);
+            this.pnlFindPanel.Controls.Add(this.button4);
+            this.pnlFindPanel.Location = new System.Drawing.Point(965, 281);
+            this.pnlFindPanel.Name = "pnlFindPanel";
+            this.pnlFindPanel.Size = new System.Drawing.Size(306, 261);
+            this.pnlFindPanel.TabIndex = 4;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(167, 107);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(85, 17);
+            this.radioButton3.TabIndex = 3;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "radioButton3";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(167, 153);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(85, 17);
+            this.radioButton4.TabIndex = 2;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "radioButton4";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(106, 211);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(187, 211);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // TexBox_Components
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(927, 450);
+            this.ClientSize = new System.Drawing.Size(1302, 551);
+            this.Controls.Add(this.pnlFindPanel);
+            this.Controls.Add(this.pnlSearchPanel);
+            this.Controls.Add(this.pnlGeneralOptions);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.ComponentTexting_Box);
             this.Controls.Add(this.panel1);
@@ -272,6 +400,10 @@
             this.Load += new System.EventHandler(this.TexBox_Components_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.pnlSearchPanel.ResumeLayout(false);
+            this.pnlSearchPanel.PerformLayout();
+            this.pnlFindPanel.ResumeLayout(false);
+            this.pnlFindPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -295,6 +427,17 @@
         private System.Windows.Forms.RichTextBox ComponentTexting_Box;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button Read_Data_btn;
+        private System.Windows.Forms.Panel pnlGeneralOptions;
+        private System.Windows.Forms.Panel pnlSearchPanel;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel pnlFindPanel;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
 
