@@ -20,12 +20,7 @@ namespace Text_Processor
         private void pnlGeneralOptions_Paint(object sender, PaintEventArgs e)
         {
             //on program load this set visble false of option panels.
-            pnlFindPanel.Visible = false;
-            pnlSearchPanel.Visible = false;
-
-            pnlFindPanel.Location = new Point(572, 134);
-            pnlSearchPanel.Location = new Point(572, 134);
-
+         
         }
         public void Bold_Function()
         {
@@ -108,10 +103,10 @@ namespace Text_Processor
 
         private void FindFilter_BTN_Click(object sender, EventArgs e)
         {
-
             pnlFindPanel.Visible = true;
-            pnlSearchPanel.Visible = false;
+            pnlFindPanel.BringToFront();
 
+            
         }
 
         private void HighLight_BTN_Click(object sender, EventArgs e)
@@ -131,16 +126,20 @@ namespace Text_Processor
 
         private void ReplaceFilter_BTN_Click(object sender, EventArgs e)
         {
+            pnlReplacePanel.Visible = true;
+            pnlReplacePanel.BringToFront();
         }
 
         private void Scrapping_BTN_Click(object sender, EventArgs e)
         {
+            pnlScappingPanel.Visible = true;
+            pnlScappingPanel.BringToFront();
         }
 
         private void Search_Filter_BTN_Click(object sender, EventArgs e)
         {
             pnlSearchPanel.Visible = true;
-            pnlFindPanel.Visible = false;
+            pnlSearchPanel.BringToFront();
         }
 
         //set font style of richTextBox
@@ -152,6 +151,18 @@ namespace Text_Processor
         // form event
         private void TexBox_Components_Load(object sender, EventArgs e)
         {
+
+            pnlFindPanel.Visible = false;
+            pnlSearchPanel.Visible = false;
+            pnlScappingPanel.Visible = false;
+            pnlReplacePanel.Visible = false;
+
+            pnlSearchPanel.Location = new Point(572, 134);
+            pnlFindPanel.Location = new Point(572, 134); ;
+            pnlReplacePanel.Location= new Point(572, 134);
+            pnlScappingPanel.Location= new Point(572, 134); ;
+
+
             foreach (string fileName in importedFiles)
             {
                 listBox1.Items.Add(fileName);  // adding files from array to list box
