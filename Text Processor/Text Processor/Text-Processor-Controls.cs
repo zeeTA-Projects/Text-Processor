@@ -10,6 +10,22 @@ namespace Text_Processor
     {
         private ArrayList importedFiles;    // here we add some sample files into this list.
 
+        /**
+         * Every thing is perfect .
+         * Couple of things which you need to follow.
+         * What ever you need to declare, declare in this class.
+         * And try to create cohesive methods if possible.
+         * An other thing is that of you are applying option
+         * like bold or italic or any thing then pass the selected txt
+         * from parameter.
+         * An other thing re arrange code a bit, in a way that  Listner methods should be above and
+         * your deifined methods should be after them ...
+         * 
+         * 
+         * 
+         * Rest of thing thing is wonderfull as i expected.
+         */
+
 
         //Bold Function
         private void UnderLine_BTN_Click(object sender, EventArgs e)
