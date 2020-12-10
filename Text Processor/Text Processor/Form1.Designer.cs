@@ -123,6 +123,7 @@
             this.label26 = new System.Windows.Forms.Label();
             this.TargetFile_ReplaceFilter_txt = new System.Windows.Forms.TextBox();
             this.Clear_richTextBox = new System.Windows.Forms.Button();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.pnlSearchPanel.SuspendLayout();
             this.seachOption_searchFilter_btn.SuspendLayout();
@@ -138,6 +139,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.Clear_richTextBox);
             this.panel1.Controls.Add(this.Read_Data_btn);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.ReplaceFilter_BTN);
@@ -231,7 +233,7 @@
             this.Font.AutoSize = true;
             this.Font.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Font.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Font.Location = new System.Drawing.Point(143, 57);
+            this.Font.Location = new System.Drawing.Point(133, 56);
             this.Font.Name = "Font";
             this.Font.Size = new System.Drawing.Size(36, 17);
             this.Font.TabIndex = 6;
@@ -250,7 +252,7 @@
             "Arial Black",
             "Brush Script MT",
             "Times New Roman"});
-            this.comboBox2.Location = new System.Drawing.Point(191, 57);
+            this.comboBox2.Location = new System.Drawing.Point(175, 58);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(90, 21);
             this.comboBox2.TabIndex = 5;
@@ -261,7 +263,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(42, 57);
+            this.label1.Location = new System.Drawing.Point(10, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 17);
             this.label1.TabIndex = 4;
@@ -295,7 +297,7 @@
             "34",
             "40",
             "48"});
-            this.comboBox1.Location = new System.Drawing.Point(83, 59);
+            this.comboBox1.Location = new System.Drawing.Point(60, 56);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(54, 21);
             this.comboBox1.TabIndex = 3;
@@ -335,7 +337,7 @@
             // 
             this.richTextbox1.Location = new System.Drawing.Point(260, 133);
             this.richTextbox1.Name = "richTextbox1";
-            this.richTextbox1.Size = new System.Drawing.Size(306, 253);
+            this.richTextbox1.Size = new System.Drawing.Size(306, 154);
             this.richTextbox1.TabIndex = 1;
             this.richTextbox1.Text = "";
             // 
@@ -1098,20 +1100,28 @@
             // 
             // Clear_richTextBox
             // 
-            this.Clear_richTextBox.Location = new System.Drawing.Point(430, 397);
+            this.Clear_richTextBox.Location = new System.Drawing.Point(271, 56);
             this.Clear_richTextBox.Name = "Clear_richTextBox";
-            this.Clear_richTextBox.Size = new System.Drawing.Size(120, 23);
+            this.Clear_richTextBox.Size = new System.Drawing.Size(77, 23);
             this.Clear_richTextBox.TabIndex = 14;
             this.Clear_richTextBox.Text = "CLear Text";
             this.Clear_richTextBox.UseVisualStyleBackColor = true;
             this.Clear_richTextBox.Click += new System.EventHandler(this.Clear_richTextBox_Click);
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(260, 300);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(306, 111);
+            this.richTextBox2.TabIndex = 25;
+            this.richTextBox2.Text = "";
             // 
             // TexBox_Components
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1320, 448);
-            this.Controls.Add(this.Clear_richTextBox);
+            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.richTextbox1);
             this.Controls.Add(this.panel1);
@@ -1244,6 +1254,7 @@
         private System.Windows.Forms.TextBox TargetFile_ReplaceFilter_txt;
         private System.Windows.Forms.Label FileStatus;
         private System.Windows.Forms.Button Clear_richTextBox;
+        private System.Windows.Forms.RichTextBox richTextBox2;
     }
 }
 

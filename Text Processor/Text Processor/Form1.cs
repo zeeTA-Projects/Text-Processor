@@ -14,8 +14,9 @@ namespace Text_Processor
             InitializeComponent();
 
             importedFiles = new ArrayList();
-            importedFiles.Add(@"F:\xamp\XAMP\htdocs\Text-Processor\SampleFile1.txt");
-            importedFiles.Add(@"F:\xamp\XAMP\htdocs\Text-Processor\SampleFile2.txt");
+            storeSearchData = new ArrayList();
+            importedFiles.Add(@"C:\Users\Faisal\Downloads\Text-Processor-main\Text-Processor\SampleFile1.txt");
+            importedFiles.Add(@"C:\Users\Faisal\Downloads\Text-Processor-main\Text-Processor\SampleFile2.txt");
         }
 
        
