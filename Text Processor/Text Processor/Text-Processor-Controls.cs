@@ -319,7 +319,7 @@ namespace Text_Processor
                     {
                         string readData = "";
                         while ((readData = readFile.ReadLine()) != null)
-                            richTextbox1.Text += readData;
+                          richTextbox1.Text += readData;
                         getDataFromFile += readData; // adding data to string as well bcz this is calling multiple time for different usage
                     }
                 }
@@ -336,16 +336,30 @@ namespace Text_Processor
         void Search1_FindFilter_function(string StartVal, string EndVal)
         {
             NumberOfMatches = 0;
-            richTextbox1.Clear();
+            
 
-            string givenPat = @"\s^" + StartVal + "[a-zA-Z0-9]" + EndVal + @"$\s";
+            string givenPat = StartVal + "[a-zA-Z0-9]+" + EndVal;
             Regex pattern = new Regex(givenPat);
-            MatchCollection miCollection = pattern.Matches(getDataFromFile);
-            foreach (Match match in miCollection)
+            string[] words = richTextbox1.Text.Split(' ');
+            richTextbox1.Text = "";
+            foreach (string word in words)
             {
-                richTextbox1.Text += String.Format(match.Value + " ");
-                NumberOfMatches++;
+                MatchCollection miCollection = pattern.Matches(word);
+
+
+
+                foreach (Match match in miCollection)
+                {
+                    richTextbox1.Text += String.Format(match.Value + "\n ");
+                    /*
+                     * Better is store the details like .. starting index of search ...
+                     */
+
+                    NumberOfMatches++;
+                }
+
             }
+
 
         }
 

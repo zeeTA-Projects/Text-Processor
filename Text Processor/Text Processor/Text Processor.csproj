@@ -58,6 +58,7 @@
     <Compile Include="Text-Processor-Controls.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TextFilterResultsHolder.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

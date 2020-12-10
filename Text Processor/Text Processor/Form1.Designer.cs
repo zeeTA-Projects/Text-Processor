@@ -358,7 +358,7 @@
             this.pnlSearchPanel.Controls.Add(this.Browse_searchFilter_btn);
             this.pnlSearchPanel.Controls.Add(this.targetFile_searchFilter_txt);
             this.pnlSearchPanel.Controls.Add(this.label3);
-            this.pnlSearchPanel.Location = new System.Drawing.Point(1077, 290);
+            this.pnlSearchPanel.Location = new System.Drawing.Point(988, 363);
             this.pnlSearchPanel.Name = "pnlSearchPanel";
             this.pnlSearchPanel.Size = new System.Drawing.Size(351, 290);
             this.pnlSearchPanel.TabIndex = 0;
@@ -541,7 +541,7 @@
             this.pnlScappingPanel.Controls.Add(this.label9);
             this.pnlScappingPanel.Controls.Add(this.listBox3);
             this.pnlScappingPanel.Controls.Add(this.button8);
-            this.pnlScappingPanel.Location = new System.Drawing.Point(1041, 333);
+            this.pnlScappingPanel.Location = new System.Drawing.Point(1048, 330);
             this.pnlScappingPanel.Name = "pnlScappingPanel";
             this.pnlScappingPanel.Size = new System.Drawing.Size(351, 290);
             this.pnlScappingPanel.TabIndex = 4;
@@ -758,7 +758,7 @@
             this.pnlFindPanel.Controls.Add(this.Browse_FindFilter_btn);
             this.pnlFindPanel.Controls.Add(this.label19);
             this.pnlFindPanel.Controls.Add(this.TargetFile_txt);
-            this.pnlFindPanel.Location = new System.Drawing.Point(956, 404);
+            this.pnlFindPanel.Location = new System.Drawing.Point(956, 20);
             this.pnlFindPanel.Name = "pnlFindPanel";
             this.pnlFindPanel.Size = new System.Drawing.Size(407, 290);
             this.pnlFindPanel.TabIndex = 23;
