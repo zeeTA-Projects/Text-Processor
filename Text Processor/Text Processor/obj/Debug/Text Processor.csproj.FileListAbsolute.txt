@@ -18,3 +18,13 @@ C:\Users\Faisal\Downloads\Text-Processor-main\Text Processor\Text Processor\obj\
 C:\Users\Faisal\Downloads\Text-Processor-main\Text Processor\Text Processor\obj\Debug\Text Processor.exe
 C:\Users\Faisal\Downloads\Text-Processor-main\Text Processor\Text Processor\obj\Debug\Text Processor.pdb
 F:\xamp\XAMP\htdocs\Text-Processor\Text Processor\Text Processor\obj\Debug\Text_Processor.TexBox_Components.resources
+C:\Users\Faisal\Downloads\Text-Processor-main\Text-Processor\Text Processor\Text Processor\bin\Debug\Text Processor.exe.config
+C:\Users\Faisal\Downloads\Text-Processor-main\Text-Processor\Text Processor\Text Processor\bin\Debug\Text Processor.exe
+C:\Users\Faisal\Downloads\Text-Processor-main\Text-Processor\Text Processor\Text Processor\bin\Debug\Text Processor.pdb
+C:\Users\Faisal\Downloads\Text-Processor-main\Text-Processor\Text Processor\Text Processor\obj\Debug\Text Processor.csprojAssemblyReference.cache
+C:\Users\Faisal\Downloads\Text-Processor-main\Text-Processor\Text Processor\Text Processor\obj\Debug\Text_Processor.TexBox_Components.resources
+C:\Users\Faisal\Downloads\Text-Processor-main\Text-Processor\Text Processor\Text Processor\obj\Debug\Text_Processor.Properties.Resources.resources
+C:\Users\Faisal\Downloads\Text-Processor-main\Text-Processor\Text Processor\Text Processor\obj\Debug\Text Processor.csproj.GenerateResource.cache
+C:\Users\Faisal\Downloads\Text-Processor-main\Text-Processor\Text Processor\Text Processor\obj\Debug\Text Processor.csproj.CoreCompileInputs.cache
+C:\Users\Faisal\Downloads\Text-Processor-main\Text-Processor\Text Processor\Text Processor\obj\Debug\Text Processor.exe
+C:\Users\Faisal\Downloads\Text-Processor-main\Text-Processor\Text Processor\Text Processor\obj\Debug\Text Processor.pdb
