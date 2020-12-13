@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Clear_richTextBox = new System.Windows.Forms.Button();
             this.Read_Data_btn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.ReplaceFilter_BTN = new System.Windows.Forms.Button();
@@ -62,6 +63,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+<<<<<<< Updated upstream
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -81,6 +83,36 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
+=======
+            this.HighlightSentence_SearchFilter_btn = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.Browse_searchFilter_btn = new System.Windows.Forms.Button();
+            this.targetFile_searchFilter_txt = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pnlScappingPanel = new System.Windows.Forms.Panel();
+            this.Browse_ScrappingBtn = new System.Windows.Forms.Button();
+            this.Remove_ScrappingBtn = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.ListBox_SelectedFile_scrapping = new System.Windows.Forms.ListBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Replace_ScrappingBtn = new System.Windows.Forms.Button();
+            this.ReplaceSearch_Scrapping_Txt = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.ListBox_Founded_Files_Scrapping = new System.Windows.Forms.ListBox();
+            this.Result_ScrappingBtn = new System.Windows.Forms.Button();
+            this.ContainSearch_Scrapping_Txt = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.Search_ScrappingBtn = new System.Windows.Forms.Button();
+            this.EndSearch_Scrapping_Txt = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.StartSearch_Scrapping_Txt = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.ListBox_AvailableFile_scrapping = new System.Windows.Forms.ListBox();
+            this.Add_ScrappingBtn = new System.Windows.Forms.Button();
+>>>>>>> Stashed changes
             this.pnlFindPanel = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button16 = new System.Windows.Forms.Button();
@@ -118,9 +150,29 @@
             this.listBox7 = new System.Windows.Forms.ListBox();
             this.button20 = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
+<<<<<<< Updated upstream
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
+=======
+            this.TargetFile_ReplaceFilter_txt = new System.Windows.Forms.TextBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.pnlReadData = new System.Windows.Forms.Panel();
+            this.ReadDataControlTab = new System.Windows.Forms.TabControl();
+            this.ReadFromImage_btn = new System.Windows.Forms.TabPage();
+            this.ImageData_box = new System.Windows.Forms.RichTextBox();
+            this.ReadImage_btn = new System.Windows.Forms.Button();
+            this.label27 = new System.Windows.Forms.Label();
+            this.listBox_import_images = new System.Windows.Forms.ListBox();
+            this.Import_Image_btn = new System.Windows.Forms.Button();
+            this.ReadAloud_btn = new System.Windows.Forms.TabPage();
+            this.label28 = new System.Windows.Forms.Label();
+            this.Read_Aloud_btn = new System.Windows.Forms.Button();
+            this.ShowFileToRead_box = new System.Windows.Forms.RichTextBox();
+            this.listBox_readFiles = new System.Windows.Forms.ListBox();
+            this.Import_File_btn = new System.Windows.Forms.Button();
+            this.ImagesToRead_box = new System.Windows.Forms.PictureBox();
+>>>>>>> Stashed changes
             this.panel1.SuspendLayout();
             this.pnlSearchPanel.SuspendLayout();
             this.pnlScappingPanel.SuspendLayout();
@@ -132,10 +184,16 @@
             this.groupBox2.SuspendLayout();
             this.pnlReplacePanel.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.pnlReadData.SuspendLayout();
+            this.ReadDataControlTab.SuspendLayout();
+            this.ReadFromImage_btn.SuspendLayout();
+            this.ReadAloud_btn.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagesToRead_box)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.Clear_richTextBox);
             this.panel1.Controls.Add(this.Read_Data_btn);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.ReplaceFilter_BTN);
@@ -154,6 +212,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(911, 99);
             this.panel1.TabIndex = 0;
+            // 
+            // Clear_richTextBox
+            // 
+            this.Clear_richTextBox.Location = new System.Drawing.Point(271, 56);
+            this.Clear_richTextBox.Name = "Clear_richTextBox";
+            this.Clear_richTextBox.Size = new System.Drawing.Size(77, 23);
+            this.Clear_richTextBox.TabIndex = 14;
+            this.Clear_richTextBox.Text = "CLear Text";
+            this.Clear_richTextBox.UseVisualStyleBackColor = true;
+            this.Clear_richTextBox.Click += new System.EventHandler(this.Clear_richTextBox_Click);
             // 
             // Read_Data_btn
             // 
@@ -228,7 +296,7 @@
             this.Font.AutoSize = true;
             this.Font.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Font.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Font.Location = new System.Drawing.Point(143, 57);
+            this.Font.Location = new System.Drawing.Point(133, 56);
             this.Font.Name = "Font";
             this.Font.Size = new System.Drawing.Size(36, 17);
             this.Font.TabIndex = 6;
@@ -247,18 +315,26 @@
             "Arial Black",
             "Brush Script MT",
             "Times New Roman"});
+<<<<<<< Updated upstream
             this.SetFont_box.Location = new System.Drawing.Point(191, 57);
             this.SetFont_box.Name = "SetFont_box";
             this.SetFont_box.Size = new System.Drawing.Size(90, 21);
             this.SetFont_box.TabIndex = 5;
             this.SetFont_box.SelectedIndexChanged += new System.EventHandler(this.SetFont_box_SelectedIndexChanged);
+=======
+            this.comboBox2.Location = new System.Drawing.Point(175, 58);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(90, 21);
+            this.comboBox2.TabIndex = 5;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+>>>>>>> Stashed changes
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(42, 57);
+            this.label1.Location = new System.Drawing.Point(10, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 17);
             this.label1.TabIndex = 4;
@@ -292,7 +368,7 @@
             "34",
             "40",
             "48"});
-            this.comboBox1.Location = new System.Drawing.Point(83, 59);
+            this.comboBox1.Location = new System.Drawing.Point(60, 56);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(54, 21);
             this.comboBox1.TabIndex = 3;
@@ -330,11 +406,19 @@
             // 
             // ComponentTexting_Box
             // 
+<<<<<<< Updated upstream
             this.ComponentTexting_Box.Location = new System.Drawing.Point(260, 133);
             this.ComponentTexting_Box.Name = "ComponentTexting_Box";
             this.ComponentTexting_Box.Size = new System.Drawing.Size(306, 289);
             this.ComponentTexting_Box.TabIndex = 1;
             this.ComponentTexting_Box.Text = "";
+=======
+            this.richTextbox1.Location = new System.Drawing.Point(260, 133);
+            this.richTextbox1.Name = "richTextbox1";
+            this.richTextbox1.Size = new System.Drawing.Size(306, 154);
+            this.richTextbox1.TabIndex = 1;
+            this.richTextbox1.Text = "";
+>>>>>>> Stashed changes
             // 
             // listBox1
             // 
@@ -354,7 +438,11 @@
             this.pnlSearchPanel.Controls.Add(this.button1);
             this.pnlSearchPanel.Controls.Add(this.textBox1);
             this.pnlSearchPanel.Controls.Add(this.label3);
+<<<<<<< Updated upstream
             this.pnlSearchPanel.Location = new System.Drawing.Point(1006, 365);
+=======
+            this.pnlSearchPanel.Location = new System.Drawing.Point(957, 389);
+>>>>>>> Stashed changes
             this.pnlSearchPanel.Name = "pnlSearchPanel";
             this.pnlSearchPanel.Size = new System.Drawing.Size(351, 290);
             this.pnlSearchPanel.TabIndex = 0;
@@ -536,6 +624,7 @@
             this.button7.Text = "Search";
             this.button7.UseVisualStyleBackColor = true;
             // 
+<<<<<<< Updated upstream
             // label9
             // 
             this.label9.AutoSize = true;
@@ -544,6 +633,52 @@
             this.label9.Size = new System.Drawing.Size(69, 13);
             this.label9.TabIndex = 17;
             this.label9.Text = "Available File";
+=======
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(135, 38);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Target File";
+            // 
+            // pnlScappingPanel
+            // 
+            this.pnlScappingPanel.BackColor = System.Drawing.Color.DarkKhaki;
+            this.pnlScappingPanel.Controls.Add(this.Browse_ScrappingBtn);
+            this.pnlScappingPanel.Controls.Add(this.Remove_ScrappingBtn);
+            this.pnlScappingPanel.Controls.Add(this.label10);
+            this.pnlScappingPanel.Controls.Add(this.ListBox_SelectedFile_scrapping);
+            this.pnlScappingPanel.Controls.Add(this.groupBox1);
+            this.pnlScappingPanel.Controls.Add(this.label9);
+            this.pnlScappingPanel.Controls.Add(this.ListBox_AvailableFile_scrapping);
+            this.pnlScappingPanel.Controls.Add(this.Add_ScrappingBtn);
+            this.pnlScappingPanel.Location = new System.Drawing.Point(893, 423);
+            this.pnlScappingPanel.Name = "pnlScappingPanel";
+            this.pnlScappingPanel.Size = new System.Drawing.Size(351, 290);
+            this.pnlScappingPanel.TabIndex = 4;
+            // 
+            // Browse_ScrappingBtn
+            // 
+            this.Browse_ScrappingBtn.Location = new System.Drawing.Point(146, 36);
+            this.Browse_ScrappingBtn.Name = "Browse_ScrappingBtn";
+            this.Browse_ScrappingBtn.Size = new System.Drawing.Size(67, 23);
+            this.Browse_ScrappingBtn.TabIndex = 22;
+            this.Browse_ScrappingBtn.Text = "Browse";
+            this.Browse_ScrappingBtn.UseVisualStyleBackColor = true;
+            this.Browse_ScrappingBtn.Click += new System.EventHandler(this.Browse_ScrappingBtn_Click);
+            // 
+            // Remove_ScrappingBtn
+            // 
+            this.Remove_ScrappingBtn.Location = new System.Drawing.Point(146, 65);
+            this.Remove_ScrappingBtn.Name = "Remove_ScrappingBtn";
+            this.Remove_ScrappingBtn.Size = new System.Drawing.Size(67, 23);
+            this.Remove_ScrappingBtn.TabIndex = 21;
+            this.Remove_ScrappingBtn.Text = "Remove";
+            this.Remove_ScrappingBtn.UseVisualStyleBackColor = true;
+            this.Remove_ScrappingBtn.Click += new System.EventHandler(this.Remove_ScrappingBtn_Click);
+>>>>>>> Stashed changes
             // 
             // listBox3
             // 
@@ -553,6 +688,7 @@
             this.listBox3.Size = new System.Drawing.Size(120, 95);
             this.listBox3.TabIndex = 16;
             // 
+<<<<<<< Updated upstream
             // button8
             // 
             this.button8.Location = new System.Drawing.Point(146, 94);
@@ -561,22 +697,32 @@
             this.button8.TabIndex = 15;
             this.button8.Text = "Add";
             this.button8.UseVisualStyleBackColor = true;
+=======
+            // ListBox_SelectedFile_scrapping
+            // 
+            this.ListBox_SelectedFile_scrapping.FormattingEnabled = true;
+            this.ListBox_SelectedFile_scrapping.Location = new System.Drawing.Point(219, 30);
+            this.ListBox_SelectedFile_scrapping.Name = "ListBox_SelectedFile_scrapping";
+            this.ListBox_SelectedFile_scrapping.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.ListBox_SelectedFile_scrapping.Size = new System.Drawing.Size(120, 95);
+            this.ListBox_SelectedFile_scrapping.TabIndex = 19;
+            this.ListBox_SelectedFile_scrapping.SelectedIndexChanged += new System.EventHandler(this.ListBox_SelectedFile_scrapping_SelectedIndexChanged);
+>>>>>>> Stashed changes
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.textBox11);
+            this.groupBox1.Controls.Add(this.Replace_ScrappingBtn);
+            this.groupBox1.Controls.Add(this.ReplaceSearch_Scrapping_Txt);
             this.groupBox1.Controls.Add(this.label20);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.listBox6);
-            this.groupBox1.Controls.Add(this.button12);
-            this.groupBox1.Controls.Add(this.button11);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.ListBox_Founded_Files_Scrapping);
+            this.groupBox1.Controls.Add(this.Result_ScrappingBtn);
+            this.groupBox1.Controls.Add(this.ContainSearch_Scrapping_Txt);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.Search_ScrappingBtn);
+            this.groupBox1.Controls.Add(this.EndSearch_Scrapping_Txt);
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.StartSearch_Scrapping_Txt);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Location = new System.Drawing.Point(3, 131);
             this.groupBox1.Name = "groupBox1";
@@ -585,7 +731,38 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Find Options";
             // 
+<<<<<<< Updated upstream
             // label11
+=======
+            // Replace_ScrappingBtn
+            // 
+            this.Replace_ScrappingBtn.Location = new System.Drawing.Point(143, 82);
+            this.Replace_ScrappingBtn.Name = "Replace_ScrappingBtn";
+            this.Replace_ScrappingBtn.Size = new System.Drawing.Size(57, 23);
+            this.Replace_ScrappingBtn.TabIndex = 29;
+            this.Replace_ScrappingBtn.Text = "Replace";
+            this.Replace_ScrappingBtn.UseVisualStyleBackColor = true;
+            this.Replace_ScrappingBtn.Click += new System.EventHandler(this.Replace_ScrappingBtn_Click);
+            // 
+            // ReplaceSearch_Scrapping_Txt
+            // 
+            this.ReplaceSearch_Scrapping_Txt.Location = new System.Drawing.Point(54, 85);
+            this.ReplaceSearch_Scrapping_Txt.Multiline = true;
+            this.ReplaceSearch_Scrapping_Txt.Name = "ReplaceSearch_Scrapping_Txt";
+            this.ReplaceSearch_Scrapping_Txt.Size = new System.Drawing.Size(83, 34);
+            this.ReplaceSearch_Scrapping_Txt.TabIndex = 28;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(9, 88);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(47, 13);
+            this.label20.TabIndex = 27;
+            this.label20.Text = "Replace";
+            // 
+            // label7
+>>>>>>> Stashed changes
             // 
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(9, 32);
@@ -594,6 +771,7 @@
             this.label11.TabIndex = 19;
             this.label11.Text = "Start";
             // 
+<<<<<<< Updated upstream
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(44, 29);
@@ -625,6 +803,33 @@
             this.button3.TabIndex = 19;
             this.button3.Text = "Search";
             this.button3.UseVisualStyleBackColor = true;
+=======
+            // ListBox_Founded_Files_Scrapping
+            // 
+            this.ListBox_Founded_Files_Scrapping.FormattingEnabled = true;
+            this.ListBox_Founded_Files_Scrapping.Location = new System.Drawing.Point(208, 38);
+            this.ListBox_Founded_Files_Scrapping.Name = "ListBox_Founded_Files_Scrapping";
+            this.ListBox_Founded_Files_Scrapping.Size = new System.Drawing.Size(120, 108);
+            this.ListBox_Founded_Files_Scrapping.TabIndex = 23;
+            this.ListBox_Founded_Files_Scrapping.SelectedIndexChanged += new System.EventHandler(this.ListBox_Founded_Files_Scrapping_SelectedIndexChanged);
+            // 
+            // Result_ScrappingBtn
+            // 
+            this.Result_ScrappingBtn.Location = new System.Drawing.Point(101, 125);
+            this.Result_ScrappingBtn.Name = "Result_ScrappingBtn";
+            this.Result_ScrappingBtn.Size = new System.Drawing.Size(99, 23);
+            this.Result_ScrappingBtn.TabIndex = 26;
+            this.Result_ScrappingBtn.Text = "Results";
+            this.Result_ScrappingBtn.UseVisualStyleBackColor = true;
+            this.Result_ScrappingBtn.Click += new System.EventHandler(this.Result_ScrappingBtn_Click);
+            // 
+            // ContainSearch_Scrapping_Txt
+            // 
+            this.ContainSearch_Scrapping_Txt.Location = new System.Drawing.Point(54, 55);
+            this.ContainSearch_Scrapping_Txt.Name = "ContainSearch_Scrapping_Txt";
+            this.ContainSearch_Scrapping_Txt.Size = new System.Drawing.Size(70, 20);
+            this.ContainSearch_Scrapping_Txt.TabIndex = 23;
+>>>>>>> Stashed changes
             // 
             // label13
             // 
@@ -635,12 +840,31 @@
             this.label13.TabIndex = 22;
             this.label13.Text = "Contain";
             // 
+<<<<<<< Updated upstream
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(54, 55);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(70, 20);
             this.textBox7.TabIndex = 23;
+=======
+            // Search_ScrappingBtn
+            // 
+            this.Search_ScrappingBtn.Location = new System.Drawing.Point(143, 52);
+            this.Search_ScrappingBtn.Name = "Search_ScrappingBtn";
+            this.Search_ScrappingBtn.Size = new System.Drawing.Size(57, 23);
+            this.Search_ScrappingBtn.TabIndex = 19;
+            this.Search_ScrappingBtn.Text = "Search";
+            this.Search_ScrappingBtn.UseVisualStyleBackColor = true;
+            this.Search_ScrappingBtn.Click += new System.EventHandler(this.Search_ScrappingBtn_Click);
+            // 
+            // EndSearch_Scrapping_Txt
+            // 
+            this.EndSearch_Scrapping_Txt.Location = new System.Drawing.Point(130, 29);
+            this.EndSearch_Scrapping_Txt.Name = "EndSearch_Scrapping_Txt";
+            this.EndSearch_Scrapping_Txt.Size = new System.Drawing.Size(48, 20);
+            this.EndSearch_Scrapping_Txt.TabIndex = 21;
+>>>>>>> Stashed changes
             // 
             // listBox4
             // 
@@ -650,6 +874,7 @@
             this.listBox4.Size = new System.Drawing.Size(120, 95);
             this.listBox4.TabIndex = 19;
             // 
+<<<<<<< Updated upstream
             // label10
             // 
             this.label10.AutoSize = true;
@@ -658,6 +883,14 @@
             this.label10.Size = new System.Drawing.Size(61, 13);
             this.label10.TabIndex = 20;
             this.label10.Text = "Select Files";
+=======
+            // StartSearch_Scrapping_Txt
+            // 
+            this.StartSearch_Scrapping_Txt.Location = new System.Drawing.Point(44, 29);
+            this.StartSearch_Scrapping_Txt.Name = "StartSearch_Scrapping_Txt";
+            this.StartSearch_Scrapping_Txt.Size = new System.Drawing.Size(48, 20);
+            this.StartSearch_Scrapping_Txt.TabIndex = 19;
+>>>>>>> Stashed changes
             // 
             // button9
             // 
@@ -677,6 +910,7 @@
             this.button10.Text = "Browse";
             this.button10.UseVisualStyleBackColor = true;
             // 
+<<<<<<< Updated upstream
             // button11
             // 
             this.button11.Location = new System.Drawing.Point(17, 125);
@@ -694,6 +928,26 @@
             this.button12.TabIndex = 26;
             this.button12.Text = "Results";
             this.button12.UseVisualStyleBackColor = true;
+=======
+            // ListBox_AvailableFile_scrapping
+            // 
+            this.ListBox_AvailableFile_scrapping.FormattingEnabled = true;
+            this.ListBox_AvailableFile_scrapping.Location = new System.Drawing.Point(20, 29);
+            this.ListBox_AvailableFile_scrapping.Name = "ListBox_AvailableFile_scrapping";
+            this.ListBox_AvailableFile_scrapping.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.ListBox_AvailableFile_scrapping.Size = new System.Drawing.Size(120, 95);
+            this.ListBox_AvailableFile_scrapping.TabIndex = 16;
+            // 
+            // Add_ScrappingBtn
+            // 
+            this.Add_ScrappingBtn.Location = new System.Drawing.Point(146, 94);
+            this.Add_ScrappingBtn.Name = "Add_ScrappingBtn";
+            this.Add_ScrappingBtn.Size = new System.Drawing.Size(67, 23);
+            this.Add_ScrappingBtn.TabIndex = 15;
+            this.Add_ScrappingBtn.Text = "Add";
+            this.Add_ScrappingBtn.UseVisualStyleBackColor = true;
+            this.Add_ScrappingBtn.Click += new System.EventHandler(this.Add_ScrappingBtn_Click);
+>>>>>>> Stashed changes
             // 
             // pnlFindPanel
             // 
@@ -703,8 +957,13 @@
             this.pnlFindPanel.Controls.Add(this.listBox5);
             this.pnlFindPanel.Controls.Add(this.button13);
             this.pnlFindPanel.Controls.Add(this.label19);
+<<<<<<< Updated upstream
             this.pnlFindPanel.Controls.Add(this.textBox10);
             this.pnlFindPanel.Location = new System.Drawing.Point(1078, 297);
+=======
+            this.pnlFindPanel.Controls.Add(this.TargetFile_txt);
+            this.pnlFindPanel.Location = new System.Drawing.Point(997, 343);
+>>>>>>> Stashed changes
             this.pnlFindPanel.Name = "pnlFindPanel";
             this.pnlFindPanel.Size = new System.Drawing.Size(351, 290);
             this.pnlFindPanel.TabIndex = 23;
@@ -907,8 +1166,13 @@
             this.pnlReplacePanel.Controls.Add(this.listBox7);
             this.pnlReplacePanel.Controls.Add(this.button20);
             this.pnlReplacePanel.Controls.Add(this.label26);
+<<<<<<< Updated upstream
             this.pnlReplacePanel.Controls.Add(this.textBox15);
             this.pnlReplacePanel.Location = new System.Drawing.Point(1127, 261);
+=======
+            this.pnlReplacePanel.Controls.Add(this.TargetFile_ReplaceFilter_txt);
+            this.pnlReplacePanel.Location = new System.Drawing.Point(1017, 320);
+>>>>>>> Stashed changes
             this.pnlReplacePanel.Name = "pnlReplacePanel";
             this.pnlReplacePanel.Size = new System.Drawing.Size(351, 290);
             this.pnlReplacePanel.TabIndex = 24;
@@ -1050,6 +1314,7 @@
             this.textBox15.Size = new System.Drawing.Size(113, 20);
             this.textBox15.TabIndex = 14;
             // 
+<<<<<<< Updated upstream
             // textBox16
             // 
             this.textBox16.Location = new System.Drawing.Point(72, 112);
@@ -1066,12 +1331,176 @@
             this.label22.Size = new System.Drawing.Size(69, 13);
             this.label22.TabIndex = 26;
             this.label22.Text = "Replace with";
+=======
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(260, 300);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(306, 111);
+            this.richTextBox2.TabIndex = 25;
+            this.richTextBox2.Text = "";
+            // 
+            // pnlReadData
+            // 
+            this.pnlReadData.BackColor = System.Drawing.Color.DarkKhaki;
+            this.pnlReadData.Controls.Add(this.ReadDataControlTab);
+            this.pnlReadData.Location = new System.Drawing.Point(929, 408);
+            this.pnlReadData.Name = "pnlReadData";
+            this.pnlReadData.Size = new System.Drawing.Size(339, 275);
+            this.pnlReadData.TabIndex = 26;
+            // 
+            // ReadDataControlTab
+            // 
+            this.ReadDataControlTab.Controls.Add(this.ReadFromImage_btn);
+            this.ReadDataControlTab.Controls.Add(this.ReadAloud_btn);
+            this.ReadDataControlTab.Location = new System.Drawing.Point(4, 15);
+            this.ReadDataControlTab.Name = "ReadDataControlTab";
+            this.ReadDataControlTab.SelectedIndex = 0;
+            this.ReadDataControlTab.Size = new System.Drawing.Size(324, 257);
+            this.ReadDataControlTab.TabIndex = 0;
+            // 
+            // ReadFromImage_btn
+            // 
+            this.ReadFromImage_btn.Controls.Add(this.ImageData_box);
+            this.ReadFromImage_btn.Controls.Add(this.ReadImage_btn);
+            this.ReadFromImage_btn.Controls.Add(this.label27);
+            this.ReadFromImage_btn.Controls.Add(this.listBox_import_images);
+            this.ReadFromImage_btn.Controls.Add(this.Import_Image_btn);
+            this.ReadFromImage_btn.Location = new System.Drawing.Point(4, 22);
+            this.ReadFromImage_btn.Name = "ReadFromImage_btn";
+            this.ReadFromImage_btn.Padding = new System.Windows.Forms.Padding(3);
+            this.ReadFromImage_btn.Size = new System.Drawing.Size(316, 231);
+            this.ReadFromImage_btn.TabIndex = 0;
+            this.ReadFromImage_btn.Text = "Read From Image";
+            this.ReadFromImage_btn.UseVisualStyleBackColor = true;
+            // 
+            // ImageData_box
+            // 
+            this.ImageData_box.Location = new System.Drawing.Point(124, 8);
+            this.ImageData_box.Name = "ImageData_box";
+            this.ImageData_box.Size = new System.Drawing.Size(186, 182);
+            this.ImageData_box.TabIndex = 18;
+            this.ImageData_box.Text = "";
+            // 
+            // ReadImage_btn
+            // 
+            this.ReadImage_btn.Location = new System.Drawing.Point(185, 196);
+            this.ReadImage_btn.Name = "ReadImage_btn";
+            this.ReadImage_btn.Size = new System.Drawing.Size(97, 23);
+            this.ReadImage_btn.TabIndex = 15;
+            this.ReadImage_btn.Text = "Read";
+            this.ReadImage_btn.UseVisualStyleBackColor = true;
+            this.ReadImage_btn.Click += new System.EventHandler(this.ReadImage_btn_Click);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(12, 164);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(85, 39);
+            this.label27.TabIndex = 17;
+            this.label27.Text = "Status:\r\nOpened Image:\r\nNumber of word:\r\n";
+            // 
+            // listBox_import_images
+            // 
+            this.listBox_import_images.FormattingEnabled = true;
+            this.listBox_import_images.Location = new System.Drawing.Point(6, 35);
+            this.listBox_import_images.Name = "listBox_import_images";
+            this.listBox_import_images.Size = new System.Drawing.Size(112, 121);
+            this.listBox_import_images.TabIndex = 16;
+            this.listBox_import_images.SelectedIndexChanged += new System.EventHandler(this.listBox_import_images_SelectedIndexChanged);
+            // 
+            // Import_Image_btn
+            // 
+            this.Import_Image_btn.Location = new System.Drawing.Point(6, 6);
+            this.Import_Image_btn.Name = "Import_Image_btn";
+            this.Import_Image_btn.Size = new System.Drawing.Size(91, 23);
+            this.Import_Image_btn.TabIndex = 15;
+            this.Import_Image_btn.Text = "Import Image";
+            this.Import_Image_btn.UseVisualStyleBackColor = true;
+            this.Import_Image_btn.Click += new System.EventHandler(this.Import_Image_btn_Click);
+            // 
+            // ReadAloud_btn
+            // 
+            this.ReadAloud_btn.Controls.Add(this.label28);
+            this.ReadAloud_btn.Controls.Add(this.Read_Aloud_btn);
+            this.ReadAloud_btn.Controls.Add(this.ShowFileToRead_box);
+            this.ReadAloud_btn.Controls.Add(this.listBox_readFiles);
+            this.ReadAloud_btn.Controls.Add(this.Import_File_btn);
+            this.ReadAloud_btn.Location = new System.Drawing.Point(4, 22);
+            this.ReadAloud_btn.Name = "ReadAloud_btn";
+            this.ReadAloud_btn.Padding = new System.Windows.Forms.Padding(3);
+            this.ReadAloud_btn.Size = new System.Drawing.Size(316, 231);
+            this.ReadAloud_btn.TabIndex = 1;
+            this.ReadAloud_btn.Text = "Read aloud";
+            this.ReadAloud_btn.UseVisualStyleBackColor = true;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(6, 180);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(85, 39);
+            this.label28.TabIndex = 31;
+            this.label28.Text = "Status:\r\nOpened File:\r\nNumber of word:\r\n";
+            // 
+            // Read_Aloud_btn
+            // 
+            this.Read_Aloud_btn.Location = new System.Drawing.Point(191, 200);
+            this.Read_Aloud_btn.Name = "Read_Aloud_btn";
+            this.Read_Aloud_btn.Size = new System.Drawing.Size(97, 23);
+            this.Read_Aloud_btn.TabIndex = 30;
+            this.Read_Aloud_btn.Text = "Read Aloud";
+            this.Read_Aloud_btn.UseVisualStyleBackColor = true;
+            this.Read_Aloud_btn.Click += new System.EventHandler(this.Read_Aloud_btn_Click);
+            // 
+            // ShowFileToRead_box
+            // 
+            this.ShowFileToRead_box.Location = new System.Drawing.Point(124, 8);
+            this.ShowFileToRead_box.Name = "ShowFileToRead_box";
+            this.ShowFileToRead_box.Size = new System.Drawing.Size(186, 182);
+            this.ShowFileToRead_box.TabIndex = 29;
+            this.ShowFileToRead_box.Text = "";
+            // 
+            // listBox_readFiles
+            // 
+            this.listBox_readFiles.FormattingEnabled = true;
+            this.listBox_readFiles.Location = new System.Drawing.Point(6, 35);
+            this.listBox_readFiles.Name = "listBox_readFiles";
+            this.listBox_readFiles.Size = new System.Drawing.Size(112, 121);
+            this.listBox_readFiles.TabIndex = 28;
+            this.listBox_readFiles.SelectedIndexChanged += new System.EventHandler(this.listBox_readFiles_SelectedIndexChanged);
+            // 
+            // Import_File_btn
+            // 
+            this.Import_File_btn.Location = new System.Drawing.Point(6, 6);
+            this.Import_File_btn.Name = "Import_File_btn";
+            this.Import_File_btn.Size = new System.Drawing.Size(91, 23);
+            this.Import_File_btn.TabIndex = 16;
+            this.Import_File_btn.Text = "Import File";
+            this.Import_File_btn.UseVisualStyleBackColor = true;
+            this.Import_File_btn.Click += new System.EventHandler(this.Import_File_btn_Click);
+            // 
+            // ImagesToRead_box
+            // 
+            this.ImagesToRead_box.Location = new System.Drawing.Point(955, 12);
+            this.ImagesToRead_box.Name = "ImagesToRead_box";
+            this.ImagesToRead_box.Size = new System.Drawing.Size(353, 218);
+            this.ImagesToRead_box.TabIndex = 27;
+            this.ImagesToRead_box.TabStop = false;
+>>>>>>> Stashed changes
             // 
             // TexBox_Components
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1320, 448);
+<<<<<<< Updated upstream
+=======
+            this.Controls.Add(this.ImagesToRead_box);
+            this.Controls.Add(this.pnlReadData);
+            this.Controls.Add(this.richTextBox2);
+>>>>>>> Stashed changes
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.ComponentTexting_Box);
             this.Controls.Add(this.panel1);
@@ -1103,6 +1532,13 @@
             this.pnlReplacePanel.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.pnlReadData.ResumeLayout(false);
+            this.ReadDataControlTab.ResumeLayout(false);
+            this.ReadFromImage_btn.ResumeLayout(false);
+            this.ReadFromImage_btn.PerformLayout();
+            this.ReadAloud_btn.ResumeLayout(false);
+            this.ReadAloud_btn.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagesToRead_box)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1145,25 +1581,24 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button Browse_ScrappingBtn;
+        private System.Windows.Forms.Button Remove_ScrappingBtn;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ListBox listBox4;
+        private System.Windows.Forms.ListBox ListBox_SelectedFile_scrapping;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox ContainSearch_Scrapping_Txt;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button Search_ScrappingBtn;
+        private System.Windows.Forms.TextBox EndSearch_Scrapping_Txt;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox StartSearch_Scrapping_Txt;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.ListBox ListBox_AvailableFile_scrapping;
+        private System.Windows.Forms.Button Add_ScrappingBtn;
+        private System.Windows.Forms.Button Result_ScrappingBtn;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ListBox listBox6;
+        private System.Windows.Forms.ListBox ListBox_Founded_Files_Scrapping;
         private System.Windows.Forms.Panel pnlFindPanel;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -1180,9 +1615,15 @@
         private System.Windows.Forms.ListBox listBox5;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Label label19;
+<<<<<<< Updated upstream
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox11;
+=======
+        private System.Windows.Forms.TextBox TargetFile_txt;
+        private System.Windows.Forms.Button Replace_ScrappingBtn;
+        private System.Windows.Forms.TextBox ReplaceSearch_Scrapping_Txt;
+>>>>>>> Stashed changes
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Panel pnlReplacePanel;
         private System.Windows.Forms.Label label21;
@@ -1201,7 +1642,29 @@
         private System.Windows.Forms.ListBox listBox7;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Label label26;
+<<<<<<< Updated upstream
         private System.Windows.Forms.TextBox textBox15;
+=======
+        private System.Windows.Forms.TextBox TargetFile_ReplaceFilter_txt;
+        private System.Windows.Forms.Label FileStatus;
+        private System.Windows.Forms.Button Clear_richTextBox;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Panel pnlReadData;
+        private System.Windows.Forms.TabControl ReadDataControlTab;
+        private System.Windows.Forms.TabPage ReadFromImage_btn;
+        private System.Windows.Forms.RichTextBox ImageData_box;
+        private System.Windows.Forms.Button ReadImage_btn;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.ListBox listBox_import_images;
+        private System.Windows.Forms.Button Import_Image_btn;
+        private System.Windows.Forms.TabPage ReadAloud_btn;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Button Read_Aloud_btn;
+        private System.Windows.Forms.RichTextBox ShowFileToRead_box;
+        private System.Windows.Forms.ListBox listBox_readFiles;
+        private System.Windows.Forms.Button Import_File_btn;
+        private System.Windows.Forms.PictureBox ImagesToRead_box;
+>>>>>>> Stashed changes
     }
 }
 
